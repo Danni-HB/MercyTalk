@@ -1,0 +1,234 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+img{
+  width:100%;
+  max-width:600px;
+}
+
+/* Nav bar */
+
+/* Estilo para la barra de navegación */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Contenedor del navbar */
+.navbar-container {
+  background: rgba(20, 20, 20, 0.9); /* Fondo oscuro semi-transparente */
+  color: white;
+  padding: 15px 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease-in-out;
+}
+
+/* Estilo para los enlaces */
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Estilo individual de cada enlace */
+.nav-item {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* Efecto al pasar el mouse */
+.nav-item:hover {
+  color: orange;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Efecto de cambio de color al hacer click */
+.nav-item:active {
+  color: red;
+}
+
+
+/* login */
+
+.bg-login {
+  background-image: url('/public/images/login.png'); /* Ajusta la ruta según sea necesario */
+  background-size: cover;
+  background-position: center;
+}
+/* support page*/
+.bg-support {
+  background-image: url('/images/supportp.png'); /* Ajusta la ruta según sea necesario */
+  background-size: cover;
+  background-position: center;
+}
+/* dps page*/
+.bg-dps {
+  background-image: url('/images/dpsp.png'); /* Ajusta la ruta según sea necesario */
+  background-size: cover;
+  background-position: center;
+}
+/* tank page*/
+.bg-tank {
+  background-image: url('/images/tankp.png'); /* Ajusta la ruta según sea necesario */
+  background-size: cover;
+  background-position: center;
+}
+/* heroes page*/
+.bg-Heroes {
+  background-image: url('/images/overwatch.jpg'); /* Ajusta la ruta según sea necesario */
+  background-size: cover;
+  background-position: center;
+}
+/* register page*/
+.bg-register {
+  background-image: url('/images/register.png'); /* Ajusta la ruta según sea necesario */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ajusta según sea necesario */
+  background-size: cover;
+}
+
+/*.router {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  position: absolute;
+  top: 0;
+}*/
+
+
+.image-slider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.image-slider img {
+  max-width: 80%; /* Ajusta según sea necesario */
+  border-radius: 8px; /* Borde redondeado */
+}
+
+.image-slider button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Ajusta el tamaño del botón */
+  margin: 0 10px; /* Espaciado entre botones */
+}
+
+/* Estilos para el contenedor principal con desenfoque */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con opacidad */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para el contenedor */
+  width: 100%;
+  padding: 20px; /* Espaciado interno */
+  max-width: 400px; /* Ancho máximo del contenedor */
+  box-sizing: border-box;
+  margin: auto; /* Centrar el contenedor */
+}
+
+/* Estilos para el título */
+.login-container h1 {
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos para los campos de entrada */
+.login-input {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espacio entre los campos */
+  border: 1px solid #ccc; /* Borde del campo */
+  border-radius: 5px; /* Bordes redondeados */
+  outline: none; /* Sin contorno */
+  transition: border-color 0.3s; /* Transición suave para el borde */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+/* Efecto en el campo de entrada al enfocarlo */
+.login-input:focus {
+  border-color: #007BFF; /* Cambiar color del borde al enfocarse */
+}
+
+/* Estilos para el botón */
+.login-button {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  background-color: #007BFF; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+  transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+/* Efecto en el botón al pasar el cursor */
+.login-button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+/*Main*/
+
+main {
+  padding-top: 80px; /* Ajusta esto según la altura del navbar */
+}
+
+/* Estilo para tablas de personajes */
+table {
+  width: 80%; /* Ancho completo */
+  border-collapse: collapse; /* Colapsar bordes */
+}
+
+th{
+  text-decoration:underline;
+  font-size:xx-large;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: peru;
+}
+
+/* Estilos para las celdas de la tabla */
+td {
+  padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos para las imágenes dentro de la tabla */
+td img, .grid img {
+  max-width: 200px; /* Ancho máximo de las imágenes */
+  max-height: 200px; /* Altura máxima de las imágenes */
+  height: auto; /* Mantener la relación de aspecto */
+  margin: 5px; /* Espaciado alrededor de cada imagen */
+}
+
+/* Efecto de zoom en las imágenes */
+td img:hover {
+  transform: scale(1.1); /* Escalar la imagen */
+}
+
